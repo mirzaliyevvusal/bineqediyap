@@ -1,0 +1,98 @@
+.content-slider{
+    width:100%;
+    padding:30px 0px;
+    background: #f2f6ff;
+   
+
+    .carousel-fade{
+
+        .carousel-inner{
+            border:10px solid #be9869;
+            height: 525px;
+            
+
+                .carousel-item {
+                    height: 525px;
+
+                    &::before{
+                        content: "";
+                        background: -moz-linear-gradient(top,  rgba(59,44,135,0) 0%, rgba(10,5,36,1) 100%); /* FF3.6-15 */
+                        background: -webkit-linear-gradient(top,  rgba(59,44,135,0) 0%,rgba(10,5,36,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to bottom,  rgba(59,44,135,0) 0%,rgba(10,5,36,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003b2c87', endColorstr='#0a0524',GradientType=0 ); /* IE6-9 */
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        z-index:10;
+                }
+            }
+       
+        }
+
+
+    }
+}
+
+.news-ribbon{
+    width:100%;
+    background: #fff;
+    max-height: 500px;
+    overflow: hidden;
+    box-shadow: 6px 10px 20px rgba(0,0,0,.15);
+        -webkit-box-shadow: 6px 10px 20px rgba(0,0,0,.15);
+
+    h4{
+        background:url("../img/patt.png");
+        background-color: #3b2c87;
+        padding: 10px;
+        color:#fff;
+        font-size: 20px;
+    }
+
+    .news-date{
+
+        h6{
+            color:#363694;
+            font-family: 'Segoe UI Bold';
+            font-size:16px;
+        }
+        i{
+            color: #be9869;
+        }
+
+        a{
+            color:#363694;
+            font-family: 'Segoe UI Semibold';
+
+        }
+    }
+
+}
+
+.online{
+    background:url("../img/patt.png");
+    background-color: #3b2c87;
+    border:8px solid #be9869;
+    border-radius: 8px;
+    box-shadow: 6px 10px 20px rgba(0,0,0,.15);
+    -webkit-box-shadow: 6px 10px 20px rgba(0,0,0,.15);
+    padding: 15px 0px;
+
+    a{
+        font-size:24px;
+        color:#be9869;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin:0 auto;
+        letter-spacing: 0.04em;
+
+        i{
+            
+            font-size:40px;
+            margin-left:10px;
+            
+        }
+    }
+}
+

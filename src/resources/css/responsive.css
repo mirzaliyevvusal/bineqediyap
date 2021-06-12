@@ -1,0 +1,239 @@
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+} 
+
+
+.carousel-fade .carousel-item {
+    opacity: 0 !important;
+    transition-duration: .6s  !important;
+    transition-property: opacity  !important;
+   }
+   
+   .carousel-fade  .carousel-item.active,
+   .carousel-fade  .carousel-item-next.carousel-item-left,
+   .carousel-fade  .carousel-item-prev.carousel-item-right {
+     opacity: 1  !important;
+   }
+   
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-right {
+    opacity: 0  !important;
+   }
+   
+   .carousel-fade  .carousel-item-next,
+   .carousel-fade .carousel-item-prev,
+   .carousel-fade .carousel-item.active,
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-prev {
+    transform: translateX(0)  !important;
+    transform: translate3d(0, 0, 0)  !important;
+   }
+   
+
+   
+    .animate {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+    100% {
+      transform:translateY(0rem);
+      opacity: 1;
+    }
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+  }
+  
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }
+  
+
+  /* Extra small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575.98px) {
+
+    .navbar-light .navbar-toggler{
+      color: rgba(255, 255, 255, 0.5);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-light .navbar-toggler-icon{
+      color:#fff;
+    }
+
+    .search-site{
+      display: none;
+    }
+    .SlidesOnly {  
+      max-height: 600px;
+    }
+
+    .SlidesOnly .carousel .carousel-inner::before{
+       
+    }
+    .banner .banner-1{
+      margin-bottom:30px;
+    }
+
+    .news-card ul{
+      float:none;
+      width:auto;
+    }
+    .news-card .tab-content{
+      float:none;
+      width:100%;
+    }
+    .news-card h4{
+      font-size:18px;
+    }
+    .actions .news-action-title h4{
+      
+      font-size:18px;
+    }
+    .actions .news-action-title a{
+      font-size:14px;
+    }
+    
+    .actions .post-list{
+      
+      flex-wrap: wrap;
+    }
+    .actions .post-list .post-text .title{
+      font-size:14px;
+      margin:10px;
+    }
+
+    footer img{
+      display: none;
+    }
+
+    footer ul{
+      flex-wrap: wrap;
+      margin-bottom:10px;
+      padding-bottom:10px;
+      
+    }
+  }
+  
+  /*Small devices (landscape phones, less than 768px)*/
+  @media (max-width: 767.98px) {
+
+
+
+    footer .col-lg-3 a {
+      margin-bottom:20px !important;
+      display: block;
+    }
+    
+    .actions .post-list{
+      height: auto;
+      padding:10px;
+    }
+
+    .actions .post-list .post-text .title{
+      margin:10px 0px !important;
+
+    }
+
+  }
+  
+  /* Medium devices (tablets, less than 992px)*/
+  @media (max-width: 991.98px) {
+    .banner .banner-1 h3{
+        font-size: 16px;
+    }
+    .banner .banner-1 .carousel .carousel-inner .carousel-item .carousel-caption h5{
+      font-size: 14px;
+    }
+    .banner .banner-1 .carousel .carousel-inner .carousel-item .carousel-caption p{
+        margin:0px !important;
+        font-weight: normal;
+    }
+    .banner .banner-2 h3{
+        font-size: 16px;
+    }
+    .banner .banner-2 .carousel .carousel-inner .carousel-item .carousel-caption h5{
+      font-size: 14px;
+    }
+    .banner .banner-2 .carousel .carousel-inner .carousel-item .carousel-caption p{
+        margin:0px !important;
+        font-weight: normal;
+    }
+    .content-slider .carousel-fade .carousel-inner .carousel-item{
+        height: 100% !important;
+        object-fit: cover;
+    }
+    .content-slider .carousel-fade .carousel-inner{
+      margin-bottom:30px;
+      height: 100% !important;
+        object-fit: cover;
+    }
+    
+    .banner{
+      top:-30px !important;
+    }
+
+   footer .col-lg-3 a {
+     margin-bottom:20px !important;
+     display: block;
+   }
+  }
+  
+  /* Large devices (desktops, less than 1200px)*/
+  @media (max-width: 1199.98px) {
+    .navbar-expand-lg .navbar-nav .nav-link{
+        font-size:12px;
+    }
+
+    .dropdown-item{
+      font-size:12px;
+    }
+
+    .news-card ul li a{
+      font-size:14px;
+    }
+    footer ul li{
+        font-size:12px;
+        margin-left: 18px;
+    }
+  }

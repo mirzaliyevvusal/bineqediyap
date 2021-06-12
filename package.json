@@ -1,0 +1,22 @@
+{
+  "name": "bineqediyap.org.az",
+  "version": "1.0.0",
+  "description": "bineqediyap.org.az",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Azerimed",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

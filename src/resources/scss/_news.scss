@@ -1,0 +1,78 @@
+.banner-right{
+
+    .bannerRight{
+        background-color:#fff;
+        border-top:20px solid #be9869;
+        box-shadow: 6px 10px 20px rgba(0,0,0,.15);
+        -webkit-box-shadow: 6px 10px 20px rgba(0,0,0,.15);
+        
+
+
+        h3{
+            font-size:20px;
+            color:#353694;
+            font-family: 'Segoe UI Bold';
+            font-weight: bold;
+            margin:10px;
+        }
+
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        position:  relative !important;
+                        color:#000;
+                        text-align: center;
+                        left:0 !important;
+                        right:0 !important;
+                        bottom:0 !important;
+                        height: 140px;
+                        padding-top:5px;
+
+                        h5{
+                            color:#353694;
+                            text-transform: uppercase;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-weight: bold;
+                            
+                        }
+
+                        p{
+                            font-size:14px;
+                            color:#353694;
+                            margin:15px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-weight: 700;
+                            margin-bottom:20px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        #bannerIndicators2{
+            
+            .carousel-control-prev{
+                margin-left:10px;
+            }
+            .carousel-control-prev,.carousel-control-next{
+                top:0 !important;
+                position: relative;
+                background: #be9869;
+                float:left;
+                margin-bottom:20px;
+                padding:5px;
+                margin-right:5px;
+                width:10%;
+                opacity:0.7;
+            }
+        
+        }
+    }
+}
+
+.page-link:focus, .page-link:hover{
+    background: #be9869;
+    color:#fff;
+}

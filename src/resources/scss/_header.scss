@@ -1,0 +1,230 @@
+header{
+    background:url("../img/patt.png") $site-color;
+    border-bottom:2px solid #be9869;
+
+    nav{
+
+        .nav-link{
+            text-transform: uppercase;
+            color:#fff !important;
+            font-family: 'Segoe UI Regular';
+        }
+        
+    }
+
+    .btn-group{
+        .dropdown-toggle{
+            &::after{
+                display: none;
+            }
+
+           
+        }
+
+        button{
+            background-color:transparent;
+            color:#fff;
+            cursor: pointer;
+        }
+       
+    }
+
+}
+
+
+.SlidesOnly{
+    width:100%;
+    max-height: 700px;
+    overflow: hidden;
+    position: relative;
+   
+    .carousel {
+        .carousel-inner{
+
+            &::before{
+                content: "";
+                background: url(../img/logo.png) no-repeat center;
+                width:100%;
+                height: 100%;
+                position: absolute;
+                z-index:1;      
+            }
+
+            .carousel-item{
+                img{
+                    background-size: cover;
+                    background-position: center center fixed;
+                    transition-property: opacity;
+                    height: 700px;
+                    object-fit: cover;
+                }
+                
+            }
+        }
+    }
+
+    &::before{
+        content:"";
+       /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#363694+0,ffffff+100&0.54+0,0+79 */
+background: -moz-linear-gradient(left,  rgba(54,54,148,0.54) 0%, rgba(213,213,233,0) 79%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(54,54,148,0.54) 0%,rgba(213,213,233,0) 79%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(54,54,148,0.54) 0%,rgba(213,213,233,0) 79%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a363694', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index:1;
+    }
+    
+}
+
+
+.banner{
+    width:100%;
+    //padding:40px 0px 60px;
+    position: relative;
+    top:-100px;
+    z-index:1;
+
+    .banner-1{
+        background-color:#fff;
+        border-top:20px solid #be9869;
+        box-shadow: 6px 10px 20px rgba(0,0,0,.15);
+        -webkit-box-shadow: 6px 10px 20px rgba(0,0,0,.15);
+        
+        h3{
+            font-size:20px;
+            color:#353694;
+            font-family: 'Segoe UI Bold';
+            font-weight: bold;
+            margin:10px;
+        }
+
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        position:  relative !important;
+                        color:#000;
+                        text-align: center;
+                        left:0 !important;
+                        right:0 !important;
+                        bottom:0 !important;
+                        height: 100px;
+                        padding-top:5px;
+
+                        h5{
+                            color:#353694;
+                            text-transform: uppercase;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-weight: bold;
+                            
+                        }
+
+                        p{
+                            font-size:16px;
+                            color:#353694;
+                            margin:15px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-weight: 700;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        #bannerIndicators1{
+            
+            .carousel-control-prev{
+                margin-left:10px;
+            }
+            .carousel-control-prev,.carousel-control-next{
+                top:0 !important;
+                position: relative;
+                background: #be9869;
+                float:left;
+                margin-bottom:20px;
+                padding:5px;
+                margin-right:5px;
+                width:10%;
+                opacity:0.7;
+            }
+        }
+
+
+        
+    }
+
+    .banner-2{
+        background-color:#fff;
+        border-top:20px solid #be9869;
+        box-shadow: 6px 10px 20px rgba(0,0,0,.15);
+        -webkit-box-shadow: 6px 10px 20px rgba(0,0,0,.15);
+        
+
+
+        h3{
+            font-size:20px;
+            color:#353694;
+            font-family: 'Segoe UI Bold';
+            font-weight: bold;
+            margin:10px;
+        }
+
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        position:  relative !important;
+                        color:#000;
+                        text-align: center;
+                        left:0 !important;
+                        right:0 !important;
+                        bottom:0 !important;
+                        height: 100px;
+                        padding-top:5px;
+
+                        h5{
+                            color:#353694;
+                            text-transform: uppercase;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-weight: bold;
+                            
+                        }
+
+                        p{
+                            font-size:16px;
+                            color:#353694;
+                            margin:15px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-weight: 700;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        #bannerIndicators2{
+            
+            .carousel-control-prev{
+                margin-left:10px;
+            }
+            .carousel-control-prev,.carousel-control-next{
+                top:0 !important;
+                position: relative;
+                background: #be9869;
+                float:left;
+                margin-bottom:20px;
+                padding:5px;
+                margin-right:5px;
+                width:10%;
+                opacity:0.7;
+            }
+        
+        }
+    }
+
+}
